@@ -1,4 +1,4 @@
-FROM ruby:2.3.1
+FROM ruby:2.2.2
 MAINTAINER Kolosek
 
 # Initial setup
@@ -12,6 +12,8 @@ RUN \
     nodejs \
     software-properties-common \
     unzip \
+    xvfb \
+    libfontconfig \
     wkhtmltopdf
 
 # Install yarn
